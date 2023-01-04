@@ -1,0 +1,12 @@
+<div class="mt-4">
+    <h3>Cập nhật mật khẩu</h3>
+
+    <form class="mt-4" method="POST" action="/passwords/{{password._id}}?_method=PUT">
+        <div class="form-group">
+            <label for="name">Nhập mật khẩu</label>
+            <input type="text" class="form-control" value="{{password.name}}" id="pass" name="pass">
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Lưu lại</button>
+    </form>
+</div>

@@ -1,0 +1,26 @@
+<div class="mt-4">
+    <div>
+      <h3 style="margin-bottom: 20px;">Lịch sử mở cửa A1</h3>
+      {{!-- <a href="/passwords/create"><button type="button" class="btn btn-primary">Thêm mật khẩu</button></a>
+      <a href="/passwords/sync"><button type="button" class="btn btn-primary">Đồng bộ</button></a> --}}
+    </div>
+
+    <table class="table mt-4">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Mật khẩu</th>
+                <th scope="col">Thời điểm mở cửa</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each logs}}
+            <tr>
+                <th scope="row">{{sum @index 1}}</th>
+                <td>{{this.pass}}</td>
+                <td>{{this.time}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>

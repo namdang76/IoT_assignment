@@ -1,0 +1,16 @@
+<div class="mt-4">
+    <h3>Thêm log mới</h3>
+
+    <form method="POST" action="/passwords/storelog">
+        <div class="form-group">
+            <label for="pass">Nhập pass</label>
+            <input type="text" class="form-control" id="pass" name="pass">
+            <label for="pass">Nhập timestamp</label>
+            <input type="text" class="form-control" id="time" name="time">
+            <label for="pass">Nhập wrong flag</label>
+            <input type="text" class="form-control" id="wrong" name="wrong">
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Thêm log</button>
+    </form>
+</div>
